@@ -1,0 +1,79 @@
+{
+  "name": "@POLYVANERA/sdk",
+  "version": "0.4.2",
+  "description": "Complete TypeScript SDK for Polymarket — fetch market data, stream live orderbooks, and execute trades with CLOB integration for trading bots, dashboards, and AI agents.",
+  "keywords": [
+    "polymarket",
+    "prediction-markets",
+    "trading",
+    "orderbook",
+    "real-time",
+    "websocket",
+    "sdk",
+    "typescript",
+    "crypto",
+    "defi",
+    "clob",
+    "trading-bot"
+  ],
+  "author": "Ollie Grimes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/POLYVANERA/POLYVANERA-sdk.git"
+  },
+  "homepage": "polyvanera.xyz",
+  "bugs": {
+    "url": "https://github.com/POLYVANERA/POLYVANERA-sdk/issues"
+  },
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "GUIDE_FOR_NEWBIES.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js",
+      "require": "./dist/src/index.js",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "clean": "rmdir /s /q dist || echo No dist folder",
+    "prepublishOnly": "npm run clean && npm run build",
+    "examples:list": "tsx examples/list-markets.ts",
+    "examples:orderbook": "tsx examples/live-orderbook.ts",
+    "examples:trading": "tsx examples/trading-example.ts",
+    "examples:relayer": "tsx examples/relayer-example.ts"
+  },
+  "dependencies": {
+    "@polymarket/clob-client": "^4.22.8",
+    "@polymarket/relayer-client": "^2.0.2",
+    "ethers": "^5.7.2"
+  },
+  "peerDependencies": {
+    "ws": "^8.0.0"
+  },
+  "peerDependenciesMeta": {
+    "ws": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3",
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

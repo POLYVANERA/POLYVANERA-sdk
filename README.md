@@ -781,7 +781,7 @@ Our goal is to make it easy for anyone — from developers to traders — to bui
 
 ### Follow Us
 
-- 🐦 X (Twitter): [@POLYVANERA](https://x.com/POLYVANERAxyz)
+- 🐦 X (Twitter): [@polyvaneraxyz(https://x.com/polyvaneeraxyz)
 - 🌐 Website: [polyvanera.xyz](polyvanera.xyz)
 
 ### $POLYVANERA Token
